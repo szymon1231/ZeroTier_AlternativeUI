@@ -39,6 +39,21 @@ python zerotier_ui.py
 
 albo dwuklik na `ZeroTierUI.bat` (uruchamia przez `pythonw`, bez okna konsoli).
 
+### Zasobnik, autoconnect, profile (Windows)
+
+* **Ikona w zasobniku** (zielona / szara / czerwona), menu: sieci, profile,
+  „Rozłącz wszystkie”, „Zakończ”. Przycisk X chowa okno do zasobnika.
+* **Rozłącz / Połącz** – rozłączona sieć zostaje na liście (program pamięta ją
+  w `%APPDATA%\ZeroTierAlt\config.json`). „Usuń z listy” opuszcza i zapomina.
+* **Autoconnect** per sieć (menu prawego przycisku). Opcje → rozłączanie sieci
+  bez autoconnect przy wyłączaniu komputera / starcie programu oraz łączenie
+  sieci z autoconnect przy starcie.
+* **Powiadomienia** dymkami o połączeniu, utracie połączenia, braku autoryzacji
+  (kliknięcie otwiera panel sieci w przeglądarce) i zmianie stanu węzła.
+* **Profile** (menu „Profile”) – zestaw sieci przełączany jednym kliknięciem.
+* **Autostart z Windows** (Opcje) – wpis w `HKCU\...\Run`, start z `--minimized`.
+* Włączenie `allowDefault` wymaga potwierdzenia (kieruje cały ruch przez sieć).
+
 ### Pierwsze uruchomienie i uprawnienia
 
 Usługa ZeroTier wymaga tokenu z pliku `authtoken.secret`. Program szuka go w:
